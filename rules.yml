@@ -1,0 +1,7 @@
+rules:
+  - description: nostdinc found
+    rule: 'copts =~~ "-nostdinc" and libcxx == true'
+
+  - description: c++17 found
+    rule: 'copts =~~ "-std=c++17" and libcxx == true'
+
