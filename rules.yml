@@ -1,7 +1,7 @@
 rules:
   - description: nostdinc found
-    rule: 'copts =~~ "-nostdinc" and libcxx == true'
+    rule: '[opt for opt in copts if "nostdinc" in opt] and libcxx == true'
 
-  - description: c++17 found
-    rule: 'copts =~~ "-std=c++17" and libcxx == true'
+  - description: nostdlib found
+    rule: '[opt for opt in linkopts if "-nostdlib" in opt] and libcxx == true'
 

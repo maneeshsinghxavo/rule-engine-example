@@ -62,6 +62,7 @@
 			"-c",
 			"src/lib/OpenEXR/ImfAcesFile.cpp",
 			"-o",
+			"-nostdinc",
 			"bazel-out/k8-fastbuild/bin/_objs/OpenEXR/ImfAcesFile.pic.o"
 		],
 		"linkopts": ["/usr/bin/gcc",
@@ -86,6 +87,7 @@
 			"bazel-out/k8-fastbuild/bin/external/libdeflate/_objs/deflate/zlib_decompress.pic.o",
 			"-lstdc++",
 			"-lm",
+			"-nostdlib",
 			"@bazel-out/k8-fastbuild/bin/external/libdeflate/libdeflate.so-2.params"
 		],
 
@@ -102,7 +104,7 @@
 	},
 	{
 
-		"name": "test2",
+			"name": "test2",
         "libcxx" : true,
 		"copts": [
 			"/usr/bin/gcc",
@@ -188,6 +190,7 @@
 			"bazel-out/k8-fastbuild/bin/external/libdeflate/_objs/deflate/zlib_decompress.pic.o",
 			"-lstdc++",
 			"-lm",
+			"-nostdlib",
 			"@bazel-out/k8-fastbuild/bin/external/libdeflate/libdeflate.so-2.params"
 		],
 
